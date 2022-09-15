@@ -1,3 +1,4 @@
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_tour_application/const/app_colors.dart';
@@ -45,33 +46,75 @@ class SignUp extends StatelessWidget {
                   keyboardType: TextInputType.emailAddress,
                   decoration: AppStyles().textFieldDecoration('E-mail Address'),
                 ),
-                SizedBox(height: 10.h,),
+                SizedBox(
+                  height: 10.h,
+                ),
                 TextFormField(
                   controller: _passwordController,
                   keyboardType: TextInputType.text,
                   decoration: AppStyles().textFieldDecoration('Enter Password'),
                 ),
-                SizedBox(height: 40.h,),
+                SizedBox(
+                  height: 100.h,
+                ),
                 ViolateButton('Create Account'),
-                SizedBox(height: 10.h,),
-                Text(
-                  '--OR--',
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w300,
+                SizedBox(
+                  height: 10.h,
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    '--OR--',
+                    style: TextStyle(
+                      fontSize: 16.sp,
+                      fontWeight: FontWeight.w300,
+                    ),
                   ),
                 ),
-                SizedBox(height: 10.h,),
+                SizedBox(
+                  height: 10.h,
+                ),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset('assets/icons/google.png'),
+                    ),
+                    IconButton(
+                      onPressed: () {},
+                      icon: Image.asset('assets/icons/facebook.png'),
+                    )
                   ],
-                )
+                ),
+                SizedBox(
+                  height: 15.h,
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: RichText(
+                      text: TextSpan(
+                          text: 'Already an user?  ',
+                          style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.w300,
+                              color: Colors.black),
+                          children: [
+                          TextSpan(text: 'Log In', style: TextStyle(fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                          color: AppColor.violateColor),
+                          recognizer: TapGestureRecognizer()
+                            ..onTap=() => print('click'),
+                  ),
               ],
             ),
           ),
+                ),
+          ],
         ),
       ),
+    ),)
+    ,
     );
   }
 }
