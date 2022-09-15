@@ -51,8 +51,22 @@ class SignUp extends StatelessWidget {
                   keyboardType: TextInputType.text,
                   decoration: AppStyles().textFieldDecoration('Enter Password'),
                 ),
+                SizedBox(height: 40.h,),
+                ViolateButton('Create Account'),
                 SizedBox(height: 10.h,),
-                ViolateButton(),
+                Text(
+                  '--OR--',
+                  style: TextStyle(
+                    fontSize: 16.sp,
+                    fontWeight: FontWeight.w300,
+                  ),
+                ),
+                SizedBox(height: 10.h,),
+                Row(
+                  children: [
+
+                  ],
+                )
               ],
             ),
           ),
