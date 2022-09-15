@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_tour_application/const/app_colors.dart';
 import 'package:flutter_tour_application/ui/styles/styles.dart';
-import 'package:flutter_tour_application/ui/views/auth/sign_in.dart';
+import 'package:flutter_tour_application/ui/views/auth/sign_up.dart';
 import 'package:get/get.dart';
 
 import '../../widgets/violateBtton.dart';
 
-class SignUp extends StatelessWidget {
+class SignIn extends StatelessWidget {
   TextEditingController _emailController = TextEditingController();
   TextEditingController _passwordController = TextEditingController();
 
@@ -24,21 +24,11 @@ class SignUp extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Create \nYour Account',
+                  'Login\nTo Your Account',
                   style: TextStyle(
                       fontSize: 36.sp,
                       fontWeight: FontWeight.w500,
                       color: AppColor.violateColor),
-                ),
-                SizedBox(
-                  height: 12.h,
-                ),
-                Text(
-                  'Create your account and start your journey',
-                  style: TextStyle(
-                    fontSize: 16.sp,
-                    fontWeight: FontWeight.w300,
-                  ),
                 ),
                 SizedBox(
                   height: 80.h,
@@ -59,7 +49,7 @@ class SignUp extends StatelessWidget {
                 SizedBox(
                   height: 100.h,
                 ),
-                ViolateButton('Create Account'),
+                ViolateButton('Login '),
                 SizedBox(
                   height: 10.h,
                 ),
@@ -96,17 +86,17 @@ class SignUp extends StatelessWidget {
                   alignment: Alignment.center,
                   child: RichText(
                       text: TextSpan(
-                          text: 'Already an user?  ',
+                          text: 'Dont have register yet?  ',
                           style: TextStyle(
                               fontSize: 18,
                               fontWeight: FontWeight.w300,
                               color: Colors.black),
                           children: [
-                          TextSpan(text: 'Log In', style: TextStyle(fontSize: 18,
+                          TextSpan(text: 'Sign Up', style: TextStyle(fontSize: 18,
                           fontWeight: FontWeight.w600,
                           color: AppColor.violateColor),
                           recognizer: TapGestureRecognizer()
-                            ..onTap=() => Get.to(SignIn()),
+                            ..onTap=() => Get.to(SignUp()),
                   ),
               ],
             ),
