@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_tour_application/const/app_colors.dart';
 import 'package:flutter_tour_application/ui/styles/styles.dart';
 import 'package:flutter_tour_application/ui/views/auth/sign_in.dart';
+import 'package:flutter_tour_application/ui/views/user_form.dart';
 import 'package:get/get.dart';
 
 import '../../widgets/violateBtton.dart';
@@ -59,7 +60,7 @@ class SignUp extends StatelessWidget {
                 SizedBox(
                   height: 100.h,
                 ),
-                ViolateButton('Create Account'),
+                ViolateButton('Create Account',()=>Get.to(UserForm())),
                 SizedBox(
                   height: 10.h,
                 ),

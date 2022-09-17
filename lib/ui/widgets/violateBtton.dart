@@ -5,8 +5,8 @@ import 'package:get/get.dart';
 
 class ViolateButton extends StatelessWidget {
   String title;
-
-  ViolateButton(this.title);
+  final Function onAction;
+  ViolateButton(this.title, this.onAction);
 
   RxBool _value = false.obs;
 
@@ -15,6 +15,7 @@ class ViolateButton extends StatelessWidget {
     return Obx(() => InkWell(
           onTap: () {
             _value.value = true;
+            onAction();
           },
           child: Container(
             height: 45.h,
