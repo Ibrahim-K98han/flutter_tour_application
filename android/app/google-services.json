@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "68487878137",
+    "project_id": "toure-87b44",
+    "storage_bucket": "toure-87b44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:68487878137:android:e209522267df2b63bd1928",
+        "android_client_info": {
+          "package_name": "com.example.flutter_tour_application"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "68487878137-fdo460354r23s3tanp0s7qm080d6e4jr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2qJAhFGQOi3QDB1yNS7N4Pbfepl7vtmk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "68487878137-fdo460354r23s3tanp0s7qm080d6e4jr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

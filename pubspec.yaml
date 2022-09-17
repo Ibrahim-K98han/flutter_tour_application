@@ -42,6 +42,13 @@ dependencies:
   lottie:
   dots_indicator:
   toggle_switch:
+  firebase_core:
+  firebase_auth:
+  cloud_firestore:
+  firebase_storage:
+  fluttertoast:
+  get_storage:
+  syncfusion_flutter_pdfviewer:
 
 dev_dependencies:
   flutter_test:
